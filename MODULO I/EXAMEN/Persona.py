@@ -16,6 +16,4 @@ class Persona:
         self.edad = edad
 
     def __str__(self):
-        return f"""Nombre: {self.nombre}
-                Edad: {self.edad}"""
-    
+        return "Nombre : {:<25}  \nEdad : {:<4}".format(self.get_nombre(),self.get_edad())
