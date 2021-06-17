@@ -11,3 +11,6 @@ class Cliente(Persona):
     
     def get_dui(self):
         return self.__dui
+   
+    def __str__(self):
+        return "ID Cliente : {:<25}  \n{:<100}  \nDocumento Único de Identidad : {:<10}".format(self.get_idcliente(),Persona.__str__(self),self.get_dui())
